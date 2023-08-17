@@ -3,14 +3,14 @@ package basics;
 public class ArrayDemo {
 
 	public static void main(String[] args) {
-		 int a[] = new int[10];
-		 
-		 
-		 for(int i = 0; i < 10; i ++)
-		 {
-			 a[i] = i * i;
-			 System.out.printf("%3d", a[i]);
-		 }
+		int a[] = new int[20];
+
+		for (int i = 0; i < a.length; i++) {
+			a[i] = i * i;
+		}
+
+		for (int n : a)
+			System.out.println(n);
 
 	}
 
