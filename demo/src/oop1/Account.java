@@ -6,17 +6,28 @@ public class Account {
 	private String ahname;
 	private double balance;
 
-	// Methods
-	public void open(int no, String name) {
+	// Constructor
+	public Account(int no, String name) {
 		acno = no;
 		ahname = name;
 		balance = 0;
 	}
-
+	
+    // Methods 
 	public void print() {
 		System.out.println(acno);
 		System.out.println(ahname);
 		System.out.println(balance);
 	}
+	
+	public void deposit(double amount) {
+		balance += amount;
+	}
 
+	public void withdraw(double amount) {
+		balance -= amount;
+	}
+	public double getBalance() {
+		return balance;
+	}
 }
