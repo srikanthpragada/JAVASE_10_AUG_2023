@@ -13,6 +13,12 @@ public class Account {
 		balance = 0;
 	}
 	
+	public Account(int no, String name, double bal) {
+		acno = no;
+		ahname = name;
+		balance = bal;
+	}
+	
     // Methods 
 	public void print() {
 		System.out.println(acno);

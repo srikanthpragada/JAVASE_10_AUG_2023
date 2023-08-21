@@ -11,6 +11,8 @@ public class TestAccount {
 		a1.withdraw(5000);
 		a1.print();
 		//System.out.println(a1.balance);
+		
+		Account a2 = new Account(2, "Scott", 100000);
 	}
 
 }
