@@ -1,13 +1,21 @@
 package oop1;
 
+
 public class Course {
+	// Instance variable
 	private String title;
 	private int fee, duration;
+	// Class variable 
+	private static int taxrate = 15;
 	
-	public Course(String t, int f, int d) {
-		title = t;
-		fee = f;
-		duration = d;
+	public static int getTaxRate() {
+		return taxrate;
+	}
+	
+	public Course(String title, int fee, int duration) {
+		this.title = title;
+		this.fee = fee;
+		this.duration = duration;
 	}
 	
 	public void print() {
@@ -17,23 +25,23 @@ public class Course {
 	}
 
 	public int getFee() {
-		return fee;
+		return this.fee;
 	}
 	
-	public void setFee(int f) {
-		fee = f;
+	public void setFee(int fee) {
+		this.fee = fee;
 	}
 	
 	public int getDuration() {
-		return duration;
+		return this.duration;
 	}
 	
-	public void setDuration(int d) {
-		duration = d;
+	public void setDuration(int duration) {
+		this.duration = duration;
 	}
 	
 	public int getNetFee() {
-		return  fee + (fee * 15 / 100);
+		return  this.fee + (this.fee * Course.taxrate / 100);
 	}
 
 }
