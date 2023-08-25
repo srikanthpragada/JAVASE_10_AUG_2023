@@ -35,7 +35,6 @@ class Player extends Person {
 		super.print(); 
 		System.out.println(this.game);
 	}
-	
 }
 
 public class TestPerson {
@@ -47,7 +46,11 @@ public class TestPerson {
 	    
 	    p.print();
 	    
-
+	    // Upcasting 
+	    Person per = new Player("Ronaldo","ronaldo@gmail.com", "Football");
+	    
+	    // Downcasting 
+	    Player p1 = (Player) per;
 	}
 
 }
