@@ -50,7 +50,7 @@ public class TestPerson {
 	    Person per = new Player("Ronaldo","ronaldo@gmail.com", "Football");
 	    
 	    // Downcasting 
-	    Player p1 = (Player) per;
+	    Player p1 =  (Player) per;
 	}
 
 }

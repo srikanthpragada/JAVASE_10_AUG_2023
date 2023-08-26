@@ -12,6 +12,10 @@ class Shape {
 		System.out.println(this.x);
 		System.out.println(this.y);
 	}
+
+	public double getArea() {
+		return 0;
+	}
 }
 
 class Circle extends Shape {
@@ -58,11 +62,12 @@ class Rect extends Shape {
 public class TestShape {
 
 	public static void main(String[] args) {
-		 Circle c = new Circle(5,5,10);
-		 System.out.println(c.getArea());
+		 Shape s = new Circle(5,5,10);  
+		 s.print(); 						// runtime polymorphism
+		 System.out.println(s.getArea()); 	// runtime polymorphism
 		 
-		 
-		 
+		 s = new Rect(10,10,20,5);
+		 s.print();  // runtime polymorphism
+		 System.out.println(s.getArea());
 	}
-
 }
