@@ -1,6 +1,6 @@
 package oop1;
 
-class Shape {
+abstract class Shape {
 	private int x, y;
 
 	public Shape(int x, int y) {
@@ -13,9 +13,8 @@ class Shape {
 		System.out.println(this.y);
 	}
 
-	public double getArea() {
-		return 0;
-	}
+	public abstract double getArea();
+	 
 }
 
 class Circle extends Shape {
