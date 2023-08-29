@@ -12,9 +12,8 @@ abstract class Shape {
 		System.out.println(this.x);
 		System.out.println(this.y);
 	}
-
+	
 	public abstract double getArea();
-	 
 }
 
 class Circle extends Shape {
