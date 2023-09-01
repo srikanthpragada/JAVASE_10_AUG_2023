@@ -1,5 +1,7 @@
 package oop1;
 
+import java.util.Objects;
+
 public class Account {
 	// Instance variables
 	private int acno;
@@ -35,4 +37,31 @@ public class Account {
 	public double getBalance() {
 		return balance;
 	}
+
+	@Override
+	public String toString() {
+		return "Account [acno=" + acno + ", ahname=" + ahname + ", balance=" + balance + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return this.acno;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (this.getClass() != obj.getClass())
+			return false;
+		
+		Account other = (Account) obj;
+		return acno == other.acno;
+	}
+	
+	
+	
+	
 }
