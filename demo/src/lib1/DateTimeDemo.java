@@ -10,7 +10,5 @@ public class DateTimeDemo {
 
 		LocalDateTime sdt = LocalDateTime.of(2023, 1, 1, 10, 20);
 		System.out.println(sdt);
-
 	}
-
 }
