@@ -15,7 +15,5 @@ public class ExHand {
 		}
 
 		System.out.println("The End");
-
 	}
-
 }
