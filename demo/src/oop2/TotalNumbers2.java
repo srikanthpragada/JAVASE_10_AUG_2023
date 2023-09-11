@@ -1,12 +1,10 @@
 package oop2;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TotalNumbers2 {
 
 	public static void main(String[] args) {
-
 		Scanner s = new Scanner(System.in);
 		int total = 0;
 
@@ -19,9 +17,6 @@ public class TotalNumbers2 {
 				System.out.println("Invalid Number!");
 			}
 		}
-
 		System.out.println(total);
-
 	}
-
 }
