@@ -16,8 +16,5 @@ public class GenericDemo {
 		 var names = new ArrayList<String>();
 		 names.add("Larry");
 		 var s = names.get(0);
-		 
-
 	}
-
 }
